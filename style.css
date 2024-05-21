@@ -1,0 +1,361 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Yatra+One&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Sedan+SC&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Jersey+25+Charted&display=swap');
+
+html{
+    scroll-behavior: smooth;
+}
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+    color: #ffffff;
+}
+body{
+    background-color:#222831 ;
+}
+.container{
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 85vw;
+}
+
+.header{
+    padding: 200rem;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.1rem;
+    padding-top: 1rem;
+}
+nav h1{
+    font-family: "Yatra One", system-ui;
+    font-size: 2.5rem
+}
+nav ul{
+    display: flex;
+    list-style: none;
+}   
+a{text-decoration: none;}
+nav ul li{
+    position: relative;
+    margin-left: 2rem;
+    font-weight: 350;
+    cursor: pointer;
+    padding: .25rem;
+    
+}
+nav ul a:hover{
+    color: #76ABAE;
+
+}
+nav ul li::after {
+    content: '';
+    display: block;
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 0;
+    border-bottom: 2px solid rgb(255, 255, 255); 
+    transition: width 0.5s ease; /* Add transition effect */
+}
+nav ul li:hover::after {
+    width: 100%;
+}
+
+.platforms i{
+    /* margin-right: 2rem; */
+    font-size: 2.15rem;
+    cursor: pointer;
+    
+}
+.platforms .fa-linkedin{
+    margin-right: 1.25rem;
+}
+.fa-linkedin:hover{
+    color:#0A66C2 ;
+}
+.fa-github:hover{
+    background-color: rgb(0, 0, 0);
+    border: none;
+    border-radius: 50%;
+}
+
+/* Main Classes Start  */
+main{
+    min-height: 100vh;
+    padding: 2.5rem 3.5rem;
+    
+}
+/* Intro class  */
+.intro{
+    display: flex;
+    justify-content: space-between;
+    
+}
+.left{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    font-size: 5rem;    
+}
+ 
+.left p{
+    line-height: 1rem;
+    font-size: 2rem;
+}
+.left h2{
+    line-height: 7rem;
+    margin: 1rem 0 2rem 0px ; 
+}
+.left span{
+    color: #077bee;
+    margin-top: 0rem;
+    line-height: 2rem;
+}
+
+.left button{
+    background-color: transparent;
+    font-size: 1.5rem;
+    cursor: pointer;
+    padding: 0.5rem;
+    
+    border: 1px solid black;
+    border-radius: 5%;
+    transition: background 0.5s ease 0s;
+    transition: border 0.5s ease 0s;
+}
+.left button:hover{
+    background-color: #077aee4e;
+    border: 0.5px solid rgb(255, 255, 255);
+}
+
+.right img{
+    width: 475px;
+    border-radius: 5%;
+    box-shadow: 2.5px 3px 2.5px 4px #31363F ;
+    opacity: .95;
+    cursor: pointer;
+    
+}
+/* .abt-prjct-cm{background-color: #3d436c;} */
+
+/* About Section  */
+.about-section{
+    padding-top: 2.5rem;
+    position: relative;
+}
+.about-section h3{ 
+    display: inline;
+    position: relative;
+    font-size: 3.5rem;
+}
+.about-section h3::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 125%;
+    width: calc(100% - -49.94rem);
+    height: 4px;
+    background-color: rgb(47, 0, 255); 
+}
+.about-section p{
+    margin-left: 7.5rem;
+}
+
+/* My Skill */
+.skills-me{
+    justify-content: center;
+    text-align: center;
+    margin: 1.25rem ;
+}
+
+.skills-me h4{
+    font-family: "Sedan SC", serif; /* font-family: "Jersey 25 Charted", sans-serif; */
+    font-weight: 400;
+    font-size: 2.25rem;
+    text-decoration: underline;
+    text-decoration-color: #faee00;
+    text-decoration-thickness: 2px;
+    text-decoration-style: dotted;
+}
+.skills-me span{
+    font-family: "Sedan SC", serif;
+    font-weight: 400;
+    color: red;
+}
+.skill-list{
+    margin:.5rem 2rem 0 2rem;
+    font-size: 3.5rem;
+}
+.fa-html5:hover{
+    color: #DD4B25;
+}
+.fa-css3-alt:hover{
+    color: #2d53e5;
+}
+.fa-js:hover{
+    color: #f7e025;
+}
+.fa-java:hover{
+    color: #5886a4;
+}
+.fa-python:hover{
+    color: #4b86b3 ;
+}
+.skill-list .fa-brands{
+    margin:1.5rem 4rem 0 4rem;
+    font-size: 4rem;
+}
+
+
+/* Project Section  */
+.project-section{
+    padding-top: 2.5rem;
+    position: relative;
+}
+.project-section h3{
+    display: inline;
+    position: relative;
+    font-size: 3.5rem;
+}
+.project-section h3::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 120%;
+    width: calc(100% - -42.59rem); 
+    height: 4px;
+    background-color: rgb(47, 0, 255); 
+}
+.project-section ul{
+    list-style: none;
+    display:flex ;
+    margin: 1rem 2rem 0 2rem;
+}
+.project-section ul li{
+    margin: 1rem 1rem 0 1rem;
+    font-weight: 500;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+}
+.project-section img{
+    width: 12rem;
+    height: 12rem;
+    border-radius: 10%;
+}
+
+/* Contact section  */
+.contact-section{
+    padding-top: 2.5rem;
+    position: relative;
+}
+.contact-section h3{
+    display: inline;
+    position: relative;
+    font-size: 3.5rem;
+}
+.contact-section h3::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 112%;
+    width: calc(100% - -30.8rem); 
+    height: 4px;
+    background-color: rgb(47, 0, 255); 
+}
+
+/* Form  */
+.form p{
+    margin: 1.5rem 2rem 1.75rem 2rem; 
+    justify-content: center;
+    text-align: center;
+}
+
+.form form{
+    /* max-width: 50rem; */
+    display: flex;
+    flex-direction: column;
+    margin:0 20rem; 
+}
+.form input{
+    background: transparent;
+    border: none;
+    border-bottom:1.5px solid #ffffffb6 ;
+    height: 1rem;
+    
+    margin-top: 0.5rem;
+    height: 1.5rem;
+    
+}
+.form input[type=submit]{
+    margin: 3rem 9rem 0 9rem;
+    font-weight: bold;
+    border-bottom:2px solid #077bee ;
+    opacity: 0.8;
+    cursor: pointer;
+}
+.form input[type=submit]:hover{
+    opacity: 1;
+}
+.form label{
+    opacity: 0.7;
+    margin-top: 1.25rem;
+}
+.form textarea{
+    resize: none;
+    background: transparent;
+    border: none;
+    border-bottom:1.5px solid #ffffffb6 ;
+    min-width: 34.5rem;
+    max-width:34.5rem ;
+    max-height: 12.5rem;
+    min-height: 12.5rem;
+}
+.form input:focus{
+    outline:none;
+    border-bottom:1.5px solid #ffffff ;
+}
+.form textarea:focus{
+    outline:none;
+    border-bottom:1.5px solid #ffffff ;
+}
+
+footer{
+    display: flex;
+    justify-content: space-between;
+}
+.footer-left .fa-solid,.fa-brands{
+    font-size: 2rem;
+}
+.footer-left a{
+    display: flex;
+    flex-direction: row;
+    align-items: center;margin: .9rem 0 0 0.7rem;
+}
+.footer-left span{
+    margin-left: .5rem;
+}
+.icon-f{
+    display: flex;
+}
+.fa-instagram:hover{
+    color: #FE0B7B;
+}
+.fa-whatsapp:hover{
+    color: #46C556;
+}
+.fa-envelope:hover{
+    color: #D75245;
+}
+
